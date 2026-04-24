@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuladorPedido</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--Container principal da página-->
+    <div class="container">
+    <!--Titulo principal-->
+    <h1>Simulador de Pedidos do TDS261T</h1>
+    <!--Subtitulo-->
+    </p class="subtitulo">
+    Bem-Vindo a lancheria do TDS! Aqui você come mais e paga menos.
+    </p>
+    <!--Area que contem todos os produtos-->
+    <div class="cards">
+        <!-- CARD = UM PRODUTO-->
+        <!-- Usamos label para clicar no card marque checkbox-->
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Hamburguer">
+            <!--Imagem do produto -->
+            <img src="Assets/burguer.png" alt="Hamburguer">
+            <!--Nome do produto-->
+            <h2>Hambúrguer</h2>
+            <!-- Descricao-->
+            <p> Pão, Duas Carnes, Queijo Cheddar, Tomate, Alface, Picles, Cebola, Bacon e para finalizar, o delicioso molho especial do chef. </p>
+
+            <!--Preco-->
+            <span> R$ 38,00 </span>
+        </label>
+
+
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Batata Frita">
+            <!--Imagem do produto -->
+            <img src="Assets/batataFrita.png" alt="Batata frita">
+            <!--Nome do produto-->
+            <h2>Fritas (M)</h2>
+            <!-- Descricao-->
+            <p> 400g de Fritas crocantes e douradinhas. </p>
+
+            <!--Preco-->
+            <span> R$ 22,00 </span>
+            
+        </label>
+        
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Nugets">
+            <!--Imagem do produto -->
+            <img src="Assets/nuggets.png" alt="Nugets">
+            <!--Nome do produto-->
+            <h2>Nugets(M)</h2>
+            <!-- Descricao-->
+            <p> 400g de Nugets de frango.</p>
+
+            <!--Preco-->
+            <span> R$ 28,00 </span>
+            
+        </label>
+
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Cola-Cola">
+            <!--Imagem do produto -->
+            <img src="Assets/cocacola.png" alt="Cola-Cola">
+            <!--Nome do produto-->
+            <h2>Coca-Cola</h2>
+            <!-- Descricao-->
+            <p> Coca-Cola 600ml. </p>
+
+            <!--Preco-->
+            <span> R$ 10,00 </span>
+        
+        </label>
+
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Sorvete">
+            <!--Imagem do produto -->
+            <img src="Assets/sorvete.png" alt="Sorvete">
+            <!--Nome do produto-->
+            <h2>Sorvete (p)</h2>
+            <!-- Descricao-->
+            <p> 300g de Sorvete nobre. (para acessar a tabela de sabores, favor consultar com garçons) </p>
+
+            <!--Preco-->
+            <span> R$ 24,00 </span>
+        
+        </label>
+
+        <label class="card">
+            <!--Checkbox que indentifica se o item esta selecionado-->
+            <input type="checkbox" id="Pizza">
+            <!--Imagem do produto -->
+            <img src="Assets/pizza.png" alt="Pizza">
+            <!--Nome do produto-->
+            <h2>Pizza(M)</h2>
+            <!-- Descricao-->
+            <p> Pizza média À la carte (para acessar a tabela de sabores, favor consultar com garçons) </p>
+
+            <!--Preco-->
+            <span> R$ 65,00 </span>
+        
+           </label>
+
+        </div>
+        <!--Botão que chama a função calcular() para somar o pedido-->
+        <button onclick="calcular()">Calcular Pedido</button>
+        <!-- Area de resultado do pedido-->
+        <div id="resultado" class="resultado"></div>
+    </div> 
+    <script src="script.js"></script>
+
+</body>
+</html>
+
